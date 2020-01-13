@@ -6,7 +6,7 @@ import product from './src/routes/productRouts';
 var cors = require('cors')
 
 const app = express();
-const PORT = 4001;
+const PORT = 4000;
 
 // mongoose connection
 mongoose.Promise = global.Promise;
