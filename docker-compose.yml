@@ -8,7 +8,7 @@
       - "4000:4000"
     #depends_on:
     links:
-      - mongo_node
+      - mongo
   client:
     container_name: client_node
     restart: always
@@ -16,9 +16,9 @@
     ports:
       - "3000:3000"
     links:
-      - app_node
+      - app
   mongo:
-    container_name: mongo_node
+    container_name: mongo
     image: mongo
     restart: always
     expose:
